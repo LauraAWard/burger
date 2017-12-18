@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
   host: "us-cdbr-iron-east-05.cleardb.net",
   user: "***REMOVED***",
   password: "***REMOVED***",
-  database: "burgers_db"
+  database: "***REMOVED***"
 });
 
 //connect
@@ -21,4 +21,3 @@ connection.connect(function(err) {
 //export connection for ORM
 module.exports = connection;
 
-mysql://***REMOVED***:***REMOVED***@us-cdbr-iron-east-05.cleardb.net/***REMOVED***?reconnect=true
