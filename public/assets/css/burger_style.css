@@ -1,0 +1,18 @@
+
+.eat-it {
+	font-family: 'Faster One', cursive;
+	font-size: 75px;
+	color: orangered;
+	font
+}
+
+#burger {
+	background-image: url("../img/burger.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 415px; 
+	height: 249px; 
+	margin: 50px;
+	padding: 50px;
+}
+
