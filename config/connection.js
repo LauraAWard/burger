@@ -2,10 +2,10 @@
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
-  port: 3306,
-  host: "localhost",
-  user: "root",
-  password: null,
+  port: process.env.PORT || 3306,
+  host: "us-cdbr-iron-east-05.cleardb.net",
+  user: "***REMOVED***",
+  password: "***REMOVED***",
   database: "burgers_db"
 });
 
@@ -20,3 +20,5 @@ connection.connect(function(err) {
 
 //export connection for ORM
 module.exports = connection;
+
+mysql://***REMOVED***:***REMOVED***@us-cdbr-iron-east-05.cleardb.net/***REMOVED***?reconnect=true
