@@ -3,10 +3,10 @@ var mysql = require("mysql");
 
 var connection = mysql.createConnection({
   port: process.env.PORT || 3306,
-  host: "us-cdbr-iron-east-05.cleardb.net",
-  user: "***REMOVED***",
-  password: "***REMOVED***",
-  database: "***REMOVED***"
+  host: env("DB_HOST", "us-cdbr-iron-east-05.cleardb.net"),
+  user: env("DB_DATABASE", "***REMOVED***"),
+  password: env("DB_USERNAME", "***REMOVED***"),
+  database: env("DB_PASSWORD", "***REMOVED***")
 });
 
 //connect
